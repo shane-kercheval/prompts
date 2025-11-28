@@ -37,7 +37,11 @@ tags:
 5. Maintain the original playbook structure while enhancing it with the new information
 6. Ensure that outdated or incorrect information is removed or corrected.
 7. Any information that was changed or removed should be mentioned in the output in your response (not in the playbook itself).
+{%- if path %}
 
-{% if path %}**Playbook Path/Directory**: `{{ path }}`{% endif %}
+**Playbook Path/Directory**: `{{ path }}`
+{%- endif %}
+{%- if content %}
 
-{% if content %}**Content for Update**: {{ content }}{% endif %}
+**Content for Update**: {{ content }}
+{%- endif %}

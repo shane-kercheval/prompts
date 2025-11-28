@@ -8,8 +8,6 @@ arguments:
     description: The content, concept, text, or question that needs to be explained comprehensively
 tags:
   - explanation
-  - education
-  - learning
 ---
 Provide a comprehensive explanation that makes this content accessible and thoroughly understood. Follow these guidelines:
 

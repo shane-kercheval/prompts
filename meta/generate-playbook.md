@@ -27,4 +27,7 @@ These two considerations should not necessarily be separate sections, but rather
 The goal is creating a practical working document that can guide actual work, whether being referenced by a human or used to brief an AI assistant.
 
 Create a playbook for: `{{ topic }}`
-{% if instructions %}**Instructions or Additional Context**: {{ instructions }}{% endif %}
+{%- if instructions %}
+
+**Instructions or Additional Context**: {{ instructions }}
+{%- endif %}

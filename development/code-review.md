@@ -124,8 +124,8 @@ Lead with what matters most. Provide context and alternatives, not just criticis
 Don't feel bound to this structure. If it makes sense to discuss three related issues together, do that. If a bug and a design concern stem from the same root cause, address them together.
 
 The goal is clarity and usefulness, not adherence to a template.
+{%- if repo_path %}
 
-{% if repo_path %}
 ---
 
 ## Repository Path
@@ -133,4 +133,4 @@ The goal is clarity and usefulness, not adherence to a template.
 ```
 {{ repo_path }}
 ```
-{% endif %}
+{%- endif %}
