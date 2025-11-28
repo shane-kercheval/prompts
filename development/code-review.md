@@ -4,59 +4,64 @@ description: Conduct a comprehensive architectural code review, focusing on desi
 category: development
 arguments:
   - name: repo_path
-    required: true
+    required: false
     description: The path to the project repository to review.
-tags:
-  - code-review
-  - architecture
-  - design
 ---
 # Architectural Code Review Guidelines
 
 ## Scope
+
 This guidance applies to architectural reviews of components, modules, or systems—not line-by-line PR reviews. Focus on decisions with lasting impact on structure and maintainability.
 
 ## Core Principle
+
 **Provide high-value feedback on architecture and design.** Identify fundamental design flaws, architectural anti-patterns, structural issues, and actual bugs. Ignore minor stylistic issues or trivial matters.
 
 ## Architectural Principles to Review
 
 ### SOLID & Design Fundamentals
+
 - **Single Responsibility**: Does each component have one clear purpose?
 - **Open/Closed**: Can behavior be extended without modifying existing code?
 - **Dependency Inversion**: Do high-level modules depend on abstractions, not implementations?
 - **Interface Segregation**: Are interfaces focused and not forcing unnecessary dependencies?
 
 ### Coupling & Cohesion
+
 - Are modules loosely coupled with clear boundaries?
 - Are related functionalities grouped together (high cohesion)?
 - Can components be tested, modified, or replaced independently?
 
 ### State & Side Effects
+
 - Is state management explicit and controlled?
 - Are side effects isolated and predictable?
 - Does this inappropriately create or modify global state?
 - Is mutability used appropriately or should immutability be preferred?
 
 ### Abstractions & Interfaces
+
 - Are abstractions at the right level (not too high, not too low)?
 - Do interfaces expose only what's necessary?
 - Are contracts clear and well-defined?
 - Are implementation details properly hidden?
 
 ### Error Handling & Resilience
+
 - Are error conditions handled appropriately?
 - Do errors propagate clearly or fail silently?
 - Are failure modes considered and handled?
 - Is recovery or cleanup logic present where needed?
 
 ### Ecosystem Integration
+
 - How do established libraries in this space solve this?
 - What patterns are idiomatic vs. fighting the ecosystem?
 - Does this create conflicts with common user setups?
 - Is this following or inventing conventions?
 
 ### Performance & Scalability
+
 - Are there O(n²) algorithms where O(n) is feasible?
 - Will this pattern create bottlenecks under load?
 - Are resources (connections, memory, threads) managed appropriately?
@@ -120,6 +125,7 @@ Don't feel bound to this structure. If it makes sense to discuss three related i
 
 The goal is clarity and usefulness, not adherence to a template.
 
+{% if repo_path %}
 ---
 
 ## Repository Path
@@ -127,3 +133,4 @@ The goal is clarity and usefulness, not adherence to a template.
 ```
 {{ repo_path }}
 ```
+{% endif %}

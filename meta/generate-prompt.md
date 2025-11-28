@@ -12,10 +12,6 @@ arguments:
   - name: category
     required: false
     description: Category for the prompt (e.g., development, thinking, meta)
-tags:
-  - prompt
-  - template
-  - meta
 ---
 Create a prompt file in markdown format with YAML frontmatter and Jinja2 template content.
 

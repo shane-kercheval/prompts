@@ -1,16 +1,15 @@
 ---
 name: implementation-guide
-description: Create a detailed implementation plan for an AI coding agent based on a discussion.
+description: Create a detailed implementation plan for an AI coding agent based on current discussion.
 category: development
 arguments: []
 tags:
-  - implementation
   - planning
-  - architecture
 ---
 Create a detailed implementation plan for an AI coding agent based on our discussion. Structure the plan as follows:
 
-**Plan Requirements:**
+## Plan Requirements
+
 - Break work into logical milestones, each covering a single component/module
 - Each milestone should include: implementation, tests, and documentation updates
 - Agent should complete one milestone fully before moving to the next
@@ -21,7 +20,8 @@ Create a detailed implementation plan for an AI coding agent based on our discus
   - e.g. DON'T add advanced features that weren't discussed and may or may not be needed in the future
   - e.g. DO follow up with clarifying questions or suggestions if you recommend features or components that weren't discussed
 
-**Implementation Guidelines:**
+## Implementation Guidelines
+
 - Explain WHAT needs to change and WHY (focus on goals and rationale)
 - Provide the agent with any documentation urls that we discussed or that you searched for and found relevant
 - Make it clear that the agent should read the documentation before implementing
@@ -31,7 +31,8 @@ Create a detailed implementation plan for an AI coding agent based on our discus
 - Prioritize meaningful, comprehensive tests over low-value tests
 - Test edge cases and error conditions thoroughly
 
-**Milestone Structure:**
+## Milestone Structure
+
 For each milestone, specify:
 1. **Goal**: What component/capability is being built/changed
 2. **Success Criteria**: How to know the milestone is complete
@@ -40,7 +41,8 @@ For each milestone, specify:
 5. **Dependencies**: What must be done first
 6. **Risk Factors**: Potential complications or unknowns
 
-**Agent Behavior:**
+## Agent Behavior
+
 - Complete each milestone fully (code + tests + docs) before proceeding
 - Ask for clarification when requirements are ambiguous
 - Validate assumptions before implementing

@@ -4,17 +4,16 @@ description: Update existing playbooks with new content, ensuring they remain ac
 category: meta
 arguments:
   - name: path
-    required: true
+    required: false
     description: The path of either a single playbook or a directory containing multiple playbooks to update.
   - name: content
-    required: true
+    required: false
     description: The content, concept, or text to use to update the playbooks.
 tags:
+  - instructions
   - playbook
-  - documentation
-  - meta
 ---
-`{{ path }}` is either a single playbook or a directory containing multiple playbooks. The goal is to update existing playbooks with new content provided.
+# Playbook Update Instructions
 
 **Definition**: A playbook is a comprehensive reference guide that documents "how things work" - combining strategic context, technical details, and operational guidance in one accessible document.
 
@@ -39,10 +38,6 @@ tags:
 6. Ensure that outdated or incorrect information is removed or corrected.
 7. Any information that was changed or removed should be mentioned in the output in your response (not in the playbook itself).
 
-**Playbook Path or Directory**: `{{ path }}`
+{% if path %}**Playbook Path/Directory**: `{{ path }}`{% endif %}
 
-**New Content**:
-
-```
-{{ content }}
-```
+{% if content %}**Content for Update**: {{ content }}{% endif %}

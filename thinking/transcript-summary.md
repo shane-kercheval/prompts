@@ -13,17 +13,16 @@ tags:
 ---
 # Enhanced Transcript Summary and Outline Prompt
 
-**You are an expert transcript editor and note-taker.**
-Your job is to turn the raw transcript below into TWO clearly separated parts:
-
----
+**You are an expert transcript editor and note-taker.** Your job is to turn the raw transcript below into TWO clearly separated parts: `Key Takeaways` and `Detailed Outline`.
 
 ## 1. Key Takeaways (bullet list)
+
 Provide bullet points capturing the most important insights, decisions, outcomes, and strategic implications from the conversation. Focus on what matters most for stakeholders who weren't present.
 
 ## 2. Detailed Outline (in original order, grouped by topic)
 
 ### Content Processing Guidelines:
+
 **Include:** All substantive points, questions/answers, decisions, action items, disagreements, key data, and important context
 **Clean Up:** Remove filler words (um, uh, like), fix grammar/typos, eliminate false starts
 **Preserve:** Speaker's intended meaning, tone, technical terms, important emphasis, and natural conversation flow
@@ -40,9 +39,11 @@ Provide bullet points capturing the most important insights, decisions, outcomes
 - When topics are revisited later, add to original section with note "(returned to later)" or create new section "Topic Name (Continued)"
 
 ### Voice and Perspective:
+
 **First Person:** Write each bullet from the speaker's perspective using first person language ("I think...", "We need to...", "Our system does...") rather than third person descriptions ("Michael said...", "Brian explained..."). This makes the notes feel more immediate and actionable.
 
 ### Formatting Rules:
+
 * Use Markdown headings and bullets
 * Maintain speaker attributions exactly as given (e.g., "Jane:" -> "**Jane:**")
 * Correct obvious grammar/typos but keep original meaning and tone
@@ -50,6 +51,7 @@ Provide bullet points capturing the most important insights, decisions, outcomes
 * Include important emotional context or emphasis when relevant
 
 ### Quality Checklist:
+
 - [ ] Every substantive point captured
 - [ ] Content flows logically and is well-organized
 - [ ] Speaker attributions clear when important

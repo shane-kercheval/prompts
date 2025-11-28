@@ -11,8 +11,6 @@ arguments:
     description: Additional instructions or context for the playbook
 tags:
   - playbook
-  - documentation
-  - meta
 ---
 A playbook extracts key insights and principles from the topic/content AND provides actionable guidance for applying those concepts. It should work both as a reference document for humans and as context/guidance for LLMs tackling similar tasks.
 

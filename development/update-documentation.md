@@ -1,13 +1,16 @@
 ---
 name: update-documentation
-description: Update the documentation to reflect code/design changes.
+description: Guidelines for updating project documentation to reflect current practices and approaches.
 category: development
 arguments: []
 tags:
+  - instructions
   - documentation
-  - maintenance
+  
 ---
-**When updating this documentation:**
+# Documentation Update Guidelines
+
+**When updating documentation:**
 - Remove outdated information cleanly - don't add "No longer doing X" or "Changed from Y to Z"
 - Simply present the current approach as if writing it fresh
 - The reader doesn't have context for historical decisions - don't create confusion
