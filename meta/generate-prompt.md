@@ -41,9 +41,10 @@ tags:
 
 Use {{ variable }} for required arguments.
 
-{% if optional_variable %}
+{%- if optional_variable %}
+
 Use conditional blocks for optional arguments.
-{% endif %}
+{%- endif %}
 ```
 
 ## Requirements
@@ -58,7 +59,8 @@ Use conditional blocks for optional arguments.
 **Template Content:**
 - Write clear, actionable instructions
 - Use `{{ variable }}` syntax for required arguments
-- Use `{% if variable %}...{% endif %}` for optional arguments
+- Use `{%- if variable %}...{%- endif %}` for optional arguments (the `-` strips adjacent whitespace to avoid extra blank lines when the condition is false)
+- Be mindful of how whitespace is handled in Jinja2 templates (especially for optional arguments) and format accordingly
 - Include specific guidance on expected output format
 - Be comprehensive but not verbose
 - Structure with markdown headings and formatting where helpful
