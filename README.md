@@ -38,4 +38,4 @@ Conditional content for optional arguments.
 
 ## Usage
 
-Use the `meta/generate-prompt.md` prompt to create new prompts, or copy `prompt-template.md` as a starting point
+Use the `meta/generate-prompt.md` prompt to create new prompts, or copy `prompt-template.md.example` as a starting point
