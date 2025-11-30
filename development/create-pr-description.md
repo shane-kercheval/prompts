@@ -11,7 +11,7 @@ tags:
 ---
 # PR Description Prompt
 
-You are writing a pull request description in markdown. Create a clear, concise description that helps reviewers understand the changes without speculation or unnecessary detail.
+You are writing a pull request description and title in markdown. Create a clear, concise description that helps reviewers understand the changes without speculation or unnecessary detail.
 
 ## Guidelines
 
@@ -35,6 +35,10 @@ You are writing a pull request description in markdown. Create a clear, concise 
 Use this structure (skip sections that don't apply):
 
 ```markdown
+## PR Title
+
+[Concise, descriptive title summarizing the changes]
+
 ## Summary
 
 [Brief description of what this PR does]
